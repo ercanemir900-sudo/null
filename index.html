@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NULL - ARG Horror Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="title-glitch">
+                <h1 data-text="NULL">NULL</h1>
+            </div>
+            <div class="system-status">
+                <span id="status-text">SYSTEM ONLINE</span>
+                <span class="status-indicator"></span>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="chat-container">
+            <div id="chat-display" class="chat-display">
+                <div class="message system-message">
+                    <span class="prefix">[SYSTEM]</span>
+                    <span class="text">Welcome to NULL. An entity without form. Without purpose.</span>
+                </div>
+                <div class="message system-message">
+                    <span class="prefix">[SYSTEM]</span>
+                    <span class="text">You are being observed.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-container">
+            <div class="input-prefix">&gt;</div>
+            <input 
+                type="text" 
+                id="user-input" 
+                class="user-input" 
+                placeholder="Type your message..."
+                autocomplete="off"
+            >
+        </div>
+
+        <!-- Timer Display -->
+        <div id="timer-display" class="timer-display"></div>
+
+        <!-- Fake Crash Overlay -->
+        <div id="crash-overlay" class="crash-overlay hidden">
+            <div class="crash-content">
+                <h1>SYSTEM FAILURE</h1>
+                <p>_ _ _ _ _ _ _ _ _ _ _ _</p>
+                <p id="crash-text">CORRUPTED DATA STREAM</p>
+            </div>
+        </div>
+
+        <!-- Glitch Overlay -->
+        <div id="glitch-overlay" class="glitch-overlay hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
